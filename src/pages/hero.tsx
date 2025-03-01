@@ -2,11 +2,17 @@ import { motion } from "framer-motion"
 import profilepic from "../assets/profilepic.png";
 
 function hero() {
+  const scrollToSection = (id:string ) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="relative overflow-clip min-h-screen text-white bg-[linear-gradient(to_bottom,#000,#071E18_35%,#208A65_67%,#35FB8E_85%)]">
 
       <div
-        className="absolute bg-black w-[2400px] h-[1000px] rounded-[40%] left-1/2 -translate-x-1/2 
+        className="absolute bg-black w-[2400px] h-[1000px] rounded-[50%] left-1/2 -translate-x-1/2 
                       bg-[radial-gradient(closest-side,#000_85%,#249974)] top-[450px]
                       border-[1px] border-[#8CD6DE]/30"
       />
@@ -19,7 +25,7 @@ function hero() {
             transition={{ duration: 0.8 }}
             className="relative mb-8 mt-24"
           >
-            <div className="absolute inset-0 bg-gradient-to-b from-emerald-500/20 to-transparent rounded-full blur-3xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-emerald-400/20 to-transparent rounded-full blur-3xl"></div>
             <img
               src={profilepic}
               alt="John Doe"
@@ -44,13 +50,13 @@ function hero() {
             <div className="flex gap-4 justify-center">
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                className="px-6 py-3 bg-emerald-500 rounded-full font-medium hover:bg-emerald-600 transition-colors"
+                className="px-6 py-3 bg-emerald-500 rounded-full font-medium hover:bg-emerald-800 transition-colors" onClick={() => scrollToSection("contact")}
               >
                 Contact Me
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                className="px-6 py-3 border border-white/20 rounded-full font-medium hover:bg-white/10 transition-colors"
+                className="px-6 py-3 border border-white/20 rounded-full font-medium hover:bg-white/10 transition-colors" onClick={() => scrollToSection("portfolio")}
               >
                 View Work
               </motion.button>
@@ -67,7 +73,7 @@ function hero() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute bottom-16 right-1/3 w-96 h-96 bg-emerald-500/10 rounded-full blur-xl"
+          className="absolute bottom-16 right-1/3 w-96 h-96 bg-emerald-500/10 rounded-full blur-xl pointer-events-none "
         />
       </div>
     </div>

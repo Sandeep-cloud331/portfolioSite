@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { SiTailwindcss, SiFramer, SiReact, SiNodedotjs,SiStripe } from "react-icons/si";
+import { SiTailwindcss, SiFramer, SiReact, SiNodedotjs, SiStripe } from "react-icons/si";
 // import { FaLemon } from "react-icons/fa";
 import { motion, useAnimation } from "framer-motion";
 
@@ -45,8 +45,8 @@ export const Stack = () => {
   }, [inView, controls]);
 
   return (
-    <section className="py-24 md:py-64 max-w-[1200px] mx-auto text-center" id="stack">
-      <h2 className="text-7xl text-gray-100 font-bold mb-20">My Stack</h2>
+    <section className="py-16 md:py-32 max-w-[1200px] mx-auto text-center pb-0" id="stack">
+      <h2 className="text-7xl text-gray-100 font-bold mb-10">My Stack</h2>
       <div className="flex flex-wrap justify-center gap-8" ref={ref}>
         {stackItems.map((item, index) => (
           <motion.div

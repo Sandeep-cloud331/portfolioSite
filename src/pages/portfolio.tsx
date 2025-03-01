@@ -29,7 +29,7 @@ const projects = [
   },
   {
     title: "Portfolio Website",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    desc: "Developed a responsive and visually appealing portfolio website showcasing projects. Implemented smooth animations and interactive UI elements using Framer Motion for an enhanced user experience. Utilized Tailwind CSS for efficient styling and responsiveness.",
     devstack: "React, Tailwind",
     link: "#",
     git: "https://github.com/Sandeep-cloud331/portfolioSite",
@@ -47,7 +47,7 @@ export const Portfolio = () => {
   };
 
   return (
-    <div className="text-white py-24 md:py-64" id="portfolio">
+    <div  className="text-white py-24 md:py-32" id="portfolio">
       <div className="container mx-auto px-4">
         <h2 className="text-6xl font-bold text-center mb-16">
           Selected <span className="text-emerald-300">Projects</span>
@@ -86,9 +86,9 @@ export const Portfolio = () => {
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="px-6 pb-6  bg-black/20 border border-white/10"
+                    className="px-8 pb-8  bg-black/20 border border-white/10"
                   >
-                    <div className="flex flex-col md:flex-row gap-8">
+                    <div className="flex flex-col md:flex-row gap-8 mt-10">
                       <img
                         src={project.src}
                         alt={project.title}

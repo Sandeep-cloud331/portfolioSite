@@ -1,98 +1,71 @@
 import {
   AiFillGithub,
   AiOutlineTwitter,
-  AiFillFacebook,
   AiFillInstagram,
 } from "react-icons/ai";
-import { FaTelegramPlane } from "react-icons/fa";
 
 export const Footer = () => {
   return (
-    <footer className="py-8" id="contact">
-      <div className="max-w-[1200px] mx-auto px-4">
-        <div className="flex items-center justify-between flex-col md:flex-row">
-          <div>
-            <h2 className="md:text-7xl text-4xl font-bold mb-10 text-white/50">
-              Get in <span className="text-gray-400">touch</span>
-            </h2>
-            <a
-              className="md:text-7xl text-4xl font-semibold text-white underline decoration-gray-400 decoration-2
-                                    underline-offset-4 hover:decoration-gray-200 transition duration-300"
-              href="mailto:john@doe.com"
-            >
-              sandeepcahahr@gmail.com
-            </a>
-          </div>
-
-          <div className="text-white/50 mt-12">
-            <div className="mb-8">
-              <p className="text-lg mb-1">Phone</p>
-              <a
-                href="+990788979999"
-                className="text-2xl font-semibold underline decoration-gray-400 decoration-2
-                                    underline-offset-4 hover:decoration-gray-400 transition duration-300"
-              >
-                +91 7668614447
-              </a>
-            </div>
-
-            <div className="text-lg mb-8">
-              <p className="font-bold">HOME</p>
-              <p>TOWNSHIP</p>
-              <p>MATHURA</p>
-              <p>UTTARPRADESH</p>
-            </div>
-          </div>
+    <footer className="bg-black text-gray-400 py-12">
+      <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+        
+        {/* Left Section - Contact & Branding */}
+        <div className="text-center md:text-left">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-2">Let’s Connect</h2>
+          <p className="text-lg mb-4">I’m open to collaborations and projects.</p>
+          <a
+            href="mailto:sandeepcahahr@gmail.com"
+            className="block text-xl font-semibold text-white hover:text-gray-300 transition duration-300"
+          >
+            sandeepcahahr@gmail.com
+          </a>
+          <a
+            href="tel:+917668614447"
+            className="block text-xl font-semibold text-white hover:text-gray-300 transition duration-300 mt-1"
+          >
+            +91 7668614447
+          </a>
         </div>
 
-        <div className="relative z-10 text-center mt-8 py-12">
-          <h1 className="hidden md:block text-[10rem] md:text-[12rem] lg:text-[15rem] font-bold text-white opacity-10">
-            SANDEEP CHAHAR
-          </h1>
-
-          <h1 className="md:hidden relative text-9xl md:text-[12rem] lg:text-[15rem] font-bold text-white opacity-10">
-            SANDEEP
-            <br />
-            CHAHAR
-          </h1>
+        {/* Middle Section - Location */}
+        <div className="text-center">
+          <h2 className="text-2xl font-bold text-white mb-3">Location</h2>
+          <p className="text-lg">Township, Mathura</p>
+          <p className="text-lg">Uttar Pradesh, India</p>
         </div>
 
-        <div className="relative mt-12 container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
-          <p className="text-gray-200 caption text-n-4 lg:block">
-            © 2024. All rights reserved.
-          </p>
-
-          <ul className="flex gap-5 flex-wrap">
+        {/* Right Section - Social Links */}
+        <div className="text-center">
+          <h2 className="text-2xl font-bold text-white mb-4">Follow Me</h2>
+          <div className="flex justify-center gap-6">
             <a
-              href="https://github.com"
+              href="https://github.com/Sandeep-cloud331"
               aria-label="GitHub"
-              className="text-gray-200 flex items-center justify-center w-10 h-10 rounded-full"
+              className="text-gray-500 hover:text-white transition text-4xl transform hover:scale-110"
             >
-              <AiFillGithub size={30} />
+              <AiFillGithub />
             </a>
             <a
-              href="https://x.com"
+              href="https://x.com/cahahr32523"
               aria-label="X (Twitter)"
-              className="text-gray-200 flex items-center justify-center w-10 h-10 rounded-full"
+              className="text-gray-500 hover:text-white transition text-4xl transform hover:scale-110"
             >
-              <AiOutlineTwitter size={30} />
+              <AiOutlineTwitter />
             </a>
             <a
-              href="https://facebook.com"
-              aria-label="Facebook"
-              className="text-gray-200 flex items-center justify-center w-10 h-10 rounded-full"
-            >
-              <AiFillFacebook size={30} />
-            </a>
-            <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/sandeep_chahar4"
               aria-label="Instagram"
-              className="text-gray-200 flex items-center justify-center w-10 h-10 rounded-full"
+              className="text-gray-500 hover:text-white transition text-4xl transform hover:scale-110"
             >
-              <AiFillInstagram size={30} />
+              <AiFillInstagram />
             </a>
-          </ul>
+          </div>
         </div>
+      </div>
+
+      {/* Footer Bottom - Copyright */}
+      <div className="mt-12 border-t border-gray-700 text-center pt-6 text-sm text-gray-500">
+        © 2024 <span className="font-bold text-gray-300">Sandeep Chahar</span>. All Rights Reserved.
       </div>
     </footer>
   );
