@@ -34,7 +34,7 @@ function hero() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 100, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="max-w-2xl"
@@ -50,7 +50,7 @@ function hero() {
             <div className="flex gap-4 justify-center">
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                className="px-6 py-3 bg-emerald-500 rounded-full font-medium hover:bg-emerald-800 transition-colors" onClick={() => scrollToSection("contact")}
+                className="px-6 z-10 py-3 bg-emerald-500 rounded-full font-medium hover:bg-emerald-800 transition-colors" onClick={() => scrollToSection("contact")}
               >
                 Contact Me
               </motion.button>
@@ -64,7 +64,7 @@ function hero() {
           </motion.div>
         </div>
 
-        <motion.div
+        {/* <motion.div
           animate={{
             y: [0, 15, 0],
           }}
@@ -74,7 +74,7 @@ function hero() {
             ease: "easeInOut",
           }}
           className="absolute bottom-16 right-1/3 w-96 h-96 bg-emerald-500/10 rounded-full blur-xl pointer-events-none "
-        />
+        /> */}
       </div>
     </div>
   )
