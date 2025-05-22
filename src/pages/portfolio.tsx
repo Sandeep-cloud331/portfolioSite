@@ -10,6 +10,15 @@ import { FiChevronDown } from "react-icons/fi";
 
 const projects = [
   {
+    title: "Uber clone",
+    desc: "Developed an Uber-like ride-booking platform using the MERN stack with Google Maps API integration. The app includes user authentication, ride requests, fare estimation, driver-rider matching Designed for a smooth UI/UX experience with dynamic updates for both drivers and passengers",
+    devstack: "MERN",
+    link: "https://uber-app-gold.vercel.app/",
+    git: "https://github.com/Sandeep-cloud331/uber-clone",
+    src: proj2,
+    type: "frontend",
+  },
+  {
     title: "Chat Application",
     desc: "Built a real-time Chat Application using the MERN stack (MongoDB, Express.js, React, Node.js) with Socket.io for instant messaging. Features include user authentication, one-on-one and a responsive UI. The app ensures seamless communication with an efficient WebSocket architecture",
     devstack: "MongoDB, Express, React, Node.js",
@@ -17,15 +26,6 @@ const projects = [
     git: "https://github.com/Sandeep-cloud331/chat-app",
     src: proj1,
     type: "fullstack",
-  },
-  {
-    title: "Uber clone",
-    desc: "Developed an Uber-like ride-booking platform using the MERN stack with Google Maps API integration. The app includes user authentication, ride requests, fare estimation, driver-rider matching Designed for a smooth UI/UX experience with dynamic updates for both drivers and passengers",
-    devstack: "MERN",
-    link: "#",
-    git: "https://github.com/Sandeep-cloud331/uber-clone",
-    src: proj2,
-    type: "frontend",
   },
   {
     title: "Portfolio Website",
@@ -42,12 +42,12 @@ export const Portfolio = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
 
-  const toggleExpand = (index:number) => {
+  const toggleExpand = (index: number) => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
 
   return (
-    <div  className="text-white py-24 md:py-32" id="portfolio">
+    <div className="text-white py-24 md:py-32" id="portfolio">
       <div className="container mx-auto px-4">
         <h2 className="text-6xl font-bold text-center mb-16">
           Selected <span className="text-emerald-300">Projects</span>
@@ -72,10 +72,9 @@ export const Portfolio = () => {
                   <span className="text-3xl font-light text-emerald-300">
                     0{index + 1}
                   </span>
-                  <FiChevronDown 
-                    className={`w-6 h-6 transform transition-transform ${
-                      expandedIndex === index ? "rotate-180" : ""
-                    }`}
+                  <FiChevronDown
+                    className={`w-6 h-6 transform transition-transform ${expandedIndex === index ? "rotate-180" : ""
+                      }`}
                   />
                 </div>
               </div>
