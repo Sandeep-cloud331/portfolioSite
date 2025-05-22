@@ -22,7 +22,7 @@ const projects = [
     title: "Chat Application",
     desc: "Built a real-time Chat Application using the MERN stack (MongoDB, Express.js, React, Node.js) with Socket.io for instant messaging. Features include user authentication, one-on-one and a responsive UI. The app ensures seamless communication with an efficient WebSocket architecture",
     devstack: "MongoDB, Express, React, Node.js",
-    link: "#",
+    link: "https://chat-app-kkyl.onrender.com",
     git: "https://github.com/Sandeep-cloud331/chat-app",
     src: proj1,
     type: "fullstack",
