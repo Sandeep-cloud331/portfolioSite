@@ -1,14 +1,14 @@
 import {
   AiFillGithub,
   AiOutlineTwitter,
-  AiFillInstagram,
+  AiFillLinkedin,
 } from "react-icons/ai";
 
 export const Footer = () => {
   return (
     <footer id='contact' className="bg-black text-gray-400 py-12">
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-        
+
         {/* Left Section - Contact & Branding */}
         <div className="text-center md:text-left">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-2">Let’s Connect</h2>
@@ -53,11 +53,11 @@ export const Footer = () => {
               <AiOutlineTwitter />
             </a>
             <a
-              href="https://www.instagram.com/sandeep_chahar4"
-              aria-label="Instagram"
+              href="https://www.linkedin.com/in/sandeep-chahar-a0620024a/"
+              aria-label="LinkedIn"
               className="text-gray-500 hover:text-white transition text-4xl transform hover:scale-110"
             >
-              <AiFillInstagram />
+              <AiFillLinkedin />
             </a>
           </div>
         </div>
