@@ -10,31 +10,32 @@ import { FiChevronDown } from "react-icons/fi";
 
 const projects = [
   {
-    title: "Uber clone",
+    title: "Uber App",
     desc: "Developed an Uber-like ride-booking platform using the MERN stack with Google Maps API integration. The app includes user authentication, ride requests, fare estimation, driver-rider matching Designed for a smooth UI/UX experience with dynamic updates for both drivers and passengers",
     devstack: "MERN",
     link: "https://uber-app-gold.vercel.app/",
     git: "https://github.com/Sandeep-cloud331/uber-clone",
     src: proj2,
-    type: "frontend",
+    type: "fullstack",
   },
   {
     title: "Chat Application",
     desc: "Built a real-time Chat Application using the MERN stack (MongoDB, Express.js, React, Node.js) with Socket.io for instant messaging. Features include user authentication, one-on-one and a responsive UI. The app ensures seamless communication with an efficient WebSocket architecture",
     devstack: "MongoDB, Express, React, Node.js",
-    link: "https://chat-app-kkyl.onrender.com",
+    link: "https://chat-app-aqbx.vercel.app",
     git: "https://github.com/Sandeep-cloud331/chat-app",
     src: proj1,
     type: "fullstack",
   },
   {
-    title: "Portfolio Website",
-    desc: "Developed a responsive and visually appealing portfolio website showcasing projects. Implemented smooth animations and interactive UI elements using Framer Motion for an enhanced user experience. Utilized Tailwind CSS for efficient styling and responsiveness.",
-    devstack: "React, Tailwind",
-    link: "#",
-    git: "https://github.com/Sandeep-cloud331/portfolioSite",
+    title: "Keva.in",
+    desc: "Built a modern, responsive e-commerce website for selling authentic prayer goods. Focused on clean UI, intuitive UX, and backend in Firebase.",
+    devstack: "React, Tailwind CSS",
+    link: "https://kevaa-ecommerce-platform.vercel.app/",
+    git: "https://github.com/Sandeep-cloud331/kevaa.in",
     src: proj3,
-    type: "frontend",
+    type: "Fullstack",
+
   },
 ];
 
